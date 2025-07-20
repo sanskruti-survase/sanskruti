@@ -1,0 +1,36 @@
+# Components:
+~ NE555 Timer IC × 2 (SMD package)
+~ Resistors: R1–R6 (1kΩ)
+~ Capacitors:                                                                   
+ • C1, C2, C3 – 0.1µF
+ • C4 – 1µF
+~ Diode: 1N4007
+~ Connectors: 2-Pin (J1, J2)
+~ Power Supply: +5V DC
+~ Package Type: SMD (for compact PCB layout)
+# Working:
+U1 (First NE555): Configured in astable mode to generate continuous square wave pulses.
+U2 (Second NE555): Receives U1’s output and shapes/amplifies it to produce a stable vibrating pulse.
+D1 (1N4007): Provides reverse polarity protection.
+RC Network: Resistors and capacitors control timing frequency and signal debounce.
+Use Case: Drives waveform generators or vibration motors in compact circuits.
+ PCB Design & Layout:
+# Schematic Design:
+Displays circuit connections, components, and nodes.
+Power routing includes diode (D1) and capacitor filtering.
+Clear node labeling ensures proper PCB routing and debugging.
+# 2D PCB Layout:
+Top Layer (Red): Component footprints and routing.
+Bottom Layer (Blue): Signal traces and additional routing.
+Top Silkscreen Layer (White): Labels for R1–R6, C1–C4, D1, U1, U2, J1, J2.
+Copper Layers: Mix of grid and solid fill used for ground planes and clean power distribution.
+Vias: Connect traces across top and bottom copper layers.
+# 3D PCB View:
+Shows all mounted SMD components: NE555s, diode, resistors, capacitors, and connectors.
+Visual inspection of clearances, pad alignment, and orientation.
+Layer Stack-up Includes:
+ ~Top Layer
+ ~Bottom Layer
+ ~Top Silkscreen Layer
+ ~Copper Fill (GND plane)
+ ~Vias for layer transitions
